@@ -1,0 +1,525 @@
+/* Reset de estilos para asegurar consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/************************************************************************************************/
+/* Estilos generales del cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeeeee;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos del header */
+header {
+    background-color: #1f2933;
+    color: white;
+    padding: 20px;
+}
+
+.header-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo{
+    height: 60px;
+    width: auto;
+    left: 20px;
+}
+
+/* Ajuste del tamaño del título principal*/
+header h1 {
+    font-size: 1.6rem;
+    text-align: center;
+    max-width: 70%;
+}
+
+/*boton hamburguesa*/
+.menu-toggle {
+    position: absolute;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/*nav*/
+.nav {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Lista del menu */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Enlaces del menu */
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav li{
+    margin: 10px 0;
+}
+
+/*efecto hover en los enlaces del menu*/
+nav a:hover {
+    color: #b8b8b8;
+}
+
+/*menu visible*/
+.nav.activo {
+    display: block;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Titulos de las secciones */
+section h2 {
+    margin-bottom: 20px;
+    color: #1f2933;
+}
+
+/* Donde estamos */
+.ubicacion {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.direccion {
+    margin: 10px 0 20px;
+    font-weight: 500;
+}
+
+.btn-maps {
+    display: inline-block;
+    background-color: #e6e6e6;
+    color: #1f2933;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 2px solid #1f2933;
+    font-weight: bold;
+}
+
+.btn-maps:hover {
+    background-color: #1f2933;
+    color: white;
+}
+
+/* Ultimos trabajos GRID */
+.ultimos-trabajos {
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Estilos de cada figura de los ultimos trabajos */
+.ultimos-trabajos figure {
+    background: #e6e6e6;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+/* Estilos de las imagenes de los ultimos trabajos */
+.ultimos-trabajos img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Efecto hover en las figuras de los ultimos trabajos */
+.ultimos-trabajos figure:hover {
+    transform: scale(1.15);
+    box-shadow: 0 4px 8px #011936;
+}
+
+/*Estilos de Instalaciones*/
+#instalaciones {
+    text-align: center;
+}
+
+/* Estilos de cada figura de las instalaciones */
+#instalaciones figure {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Contenedor del carrusel */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Pista que se mueve */
+.carousel-track {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+/* Cada item */
+.carousel-item {
+    min-width: 100%;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Estilos del formulario de contacto */
+form {
+    display: grid;
+    gap: 15px;
+    max-width: 500px;
+}
+
+/* Estilos de los campos del formulario */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos del boton de envio */
+button {
+    background-color: #1f2933;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Efecto hover del boton */
+button:hover {
+    background-color: #b8b8b8;
+}
+
+/*Estilos de los mensajes de error en el campo del formulario*/
+/* Campo con error */
+input.error-campo,
+textarea.error-campo {
+    border: 2px solid red;
+    background-color: #ffecec;
+}
+
+/* Mensaje de error */
+.error {
+    display: none;
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+/* Mostrar mensaje cuando hay error */
+.error.visible {
+    display: block;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #1f2933;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 80px;
+}
+
+/* Estilos de las imagenes del footer */
+footer img {
+    width: 35px;
+    margin: 0 10px;
+    height: auto;
+    background: transparent;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Efecto hover en las imagenes del footer */
+footer img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* Boton flotante de whatsapp */
+.btn-whatsapp {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Estilos de la imagen del boton de whatsapp */
+.btn-whatsapp img {
+    width: 100px;
+}
+
+/* Estilos del banner de cookies */
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #1f2933;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Estilos del boton del banner de cookies */
+#cookie-banner button {
+    margin-left: 10px;
+    padding: 8px 12px;
+}
+
+/* Estilos de la politica de privacidad */
+#privacidad {
+    display: none;
+    background-color: white;
+    padding: 40px 20px;
+}
+
+/* Mostrar la politica de privacidad al hacer click en el enlace */
+#privacidad:target {
+    display: block;
+}
+
+/* Estilos del enlace de la politica de privacidad */
+.politica-link {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*************************************************************************************************/
+/* =========================
+    RESPONSIVE DESIGN - Dispositivos móviles
+   ========================= */
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Ajustes del header para dispositivos móviles */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-top {
+        position: relative;
+        gap: 30px;
+    }
+
+    .logo{
+        height: 60px;
+        width: auto;
+        position: relative
+    }
+    /* Ajustes del menu para dispositivos móviles */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-toggle{
+        position: relative;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    /* Ajuste del tamaño del título principal para dispositivos móviles */
+    header h1 {
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+
+    section h2{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    section h4{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .ultimos-trabajos {
+        grid-template-columns: 1fr;
+    }
+
+    .carousel {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: visible;
+        scroll-snap-type: x mandatory;
+    }
+
+    .carousel-track {
+        display: flex;
+        gap: 15px;
+        transition: none;
+        transform: none;
+    }
+
+    .carousel-item {
+        flex: 0 0 85%;
+        scroll-snap-align: center;
+        height: auto;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    form{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    button{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    footer{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    footer img{
+        width: 30px;
+        margin: 10px;
+    }
+
+    footer p{
+        margin: 10px 0;
+        padding: 0 10px;
+        word-wrap: break-word;
+    }
+
+    .btn-whatsapp img{
+        width: 70px;
+    }
+
+    .btn-whatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 15px;
+        z-index: 9999;
+    }
+}
+
+/***************************************************************************************************/
+/* =========================
+    RESPONSIVE DESIGN - Dispositivos de escritorio
+   ========================= */
+@media (min-width: 1024px) {
+
+    .header-top {
+        justify-content: center;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .logo {
+        position: static;
+        height: 70px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .quienes-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: baseline;
+    }
+
+    .quienes-grid p{
+        font-size: 1.1rem;
+    }
+
+    .ubicacion, .quienes-grid p {
+        background: #e6e6e6;
+        padding: 25px;
+        border-radius: 8px;
+        text-align: center; /* centramos contenido */
+    }
+
+    .btn-maps {
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+    section h2,
+    h4,
+    form {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    form {
+        max-width: 500px;
+    }
+}
+
+html,body{
+    overflow-x: hidden;
+}

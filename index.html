@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Codificacion de caracteres-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Palabras clave-->
+    <!--En desuso pero imprescindibles ya que el nombre de la empresa no es del todo claro para el usuario final-->
+    <meta name="keywords" content="industrias, acero inoxidable, industriales, lyt, lit, ele y te, l&t, elite, isleñas, islenas, distribuciones, industrial, waterjet, cutting, corte por agua">
+    <!--Titulo de la pagina-->
+    <title>L&T - Distribuciones Isleñas</title>
+    <!--Conexion con CSS-->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!--Encabezado-->
+    <header class="header">
+        <div class="header-top">
+            <img src="img/logo-empresa/logo.png" alt="Logo empresa" class="logo">
+            <h1>Industrias y Distribuciones L&T</h1>
+            <button class="menu-toggle" aria-label="Abrir menú"> ☰ </button>
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+                <li><a href="#instalaciones">Nuestras instalaciones</a></li>
+                <li><a href="#contactanos">Contacta con nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Despliegue de secciones-->
+    <!--Seccion "quienes somos"-->
+    <!-- Aqui deberia de poner a que nos dedicamos, ultimos trabajos y algunas imagenes-->
+    <section id="quienes-somos">
+        <h2>¿Quiénes somos?</h2>
+        <div class="quienes-grid">
+            <!--parrafo-->
+            <p>Empresa de cerrajería metálica especializada en el mecanizado y transformación del metal, con una amplia trayectoria en el corte por agua de metales, soldadura en acero inoxidable y trabajos de corte y pliegue de alta precisión durante más de 10 años de servicios. Se desarrollan también proyectos de fabricación de mobiliario industrial y alimenticio, ofreciendo soluciones personalizadas, resistentes y adaptadas a las necesidades de cada cliente.</p>
+
+            <div class="ubicacion">
+                <h4>¿Dónde nos encontramos?</h4>
+                <p class="direccion"> Pol. Industrial La Campana, C/ Thomas Alba Edison, nº 6 Trasera, Nave 4, 38109 El Rosario, Santa Cruz de Tenerife </p>
+                <a href="https://www.google.com/maps/dir//INDUSTRIALES+L+%26+T+cortes+por+agua+en+tenerife,+Pol.+Industrial+La+Campana,+C%5CThomas+Alba+Edison,+n%C2%BA+6+Trasera,+Nave+4,+38109+El+Rosario,+Santa+Cruz+de+Tenerife/@28.4114346,-16.3164468,17z/data=!4m17!1m7!3m6!1s0xc4032cebaf48dcf:0x3fe526184186ff0!2sINDUSTRIALES+L+%26+T+cortes+por+agua+en+tenerife!8m2!3d28.4114346!4d-16.3164468!16s%2Fg%2F11cn9l7s27!4m8!1m0!1m5!1m1!1s0xc4032cebaf48dcf:0x3fe526184186ff0!2m2!1d-16.3164643!2d28.4114488!3e0?entry=ttu&g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-maps"> 📍 Ver en Google Maps
+                </a>
+            </div>
+        </div>
+        <!--imagenes de ultimos trabajos-->
+        <h4>Últimos trabajos</h4>
+        <div class="ultimos-trabajos">
+            <!--Waterjet-->
+            <figure>
+                <img src="img/ultimos-trabajos/brida.jpg" alt="Trabajo de corte por agua">
+                <figcaption>Corte CNC de junta mecánica en 2D</figcaption>
+            </figure>
+            <!--Soldadura de inoxidable-->
+            <figure>
+                <img src="img/ultimos-trabajos/soldadura.jpeg" alt="Soldadura en inoxidable">
+                <figcaption>Soldadura inoxidable para la industria automovilística</figcaption>
+            </figure>
+            <!--Plegados-->
+            <figure>
+                <img src="img/ultimos-trabajos/plegado.jpg" alt="Trabajo de corte y pliegue">
+                <figcaption>Corte y pliegue multipropósito</figcaption>
+            </figure>
+            <!--Varios-->
+            <figure>
+                <img src="img/ultimos-trabajos/general.jpg" alt="Trabajos generales">
+                <figcaption>Cerrajería metálica en general</figcaption>
+            </figure>
+        </div>
+    </section>
+    <!--Seccion "galeria de imagenes"-->
+    <section id="instalaciones">
+        <h2>Nuestras instalaciones</h2>
+        <div class="carousel">
+            <div class="carousel-track">
+                <figure class="carousel-item">
+                    <img src="img/instalaciones/waterjet.webp" alt="Maquina de corte por agua">
+                    <figcaption>Máquina de corte por agua 5Axis SAME Waterjet</figcaption>
+                </figure>
+                <figure class="carousel-item">
+                    <img src="img/instalaciones/cizalla.webp" alt="Cizalla de 4 metros">
+                    <figcaption>Cizalla DENER MAKINA</figcaption>
+                </figure>
+                <figure class="carousel-item">
+                    <img src="img/instalaciones/plegadora.jpg" alt="Plegadora DENER MAKINA">
+                    <figcaption>Plegadora DENER MAKINA</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion "formulario de contacto"-->
+    <!--Me gustaria con js integrar el contactanos con enviar un whatsapp al numero de la empresa-->
+    <section id="contactanos">
+        <h2>Contacta con nosotros</h2>
+        <!--Formulario-->
+        <form>
+            <!--Nombre-->
+            <p>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <span class="error">Campo obligatorio</span>
+            </p>
+            <!--Correo electronico-->
+            <p>
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" placeholder="usuario@ejemplo.com" required>
+                <span class="error">Campo obligatorio</span>
+            </p>
+            <!--Motivo de consulta-->
+            <p>
+                <label for="motivo">Acerca de</label><br>
+                <select id="motivo" name="motivo">
+                    <option value="horarios">Horarios</option>
+                    <option value="solicitar presupuesto">Solicitar presupuesto</option>
+                    <option value="otro">Otras cuestiones</option>
+                </select>
+                <span class="error">Campo obligatorio</span>
+            </p>
+            <p>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escriba su mensaje" required></textarea>
+                <span class="error">Campo obligatorio</span>
+            </p>
+            <!--Boton de envio de mensaje (mediante whatsapp)-->
+            <p>
+                <button type="button"onclick="enviarFormulario()">Enviar</button>
+            </p>
+        </form>
+    </section>
+    <!--Pie de pagina-->
+    <footer>
+        <a href="https://www.facebook.com/" class="btn-facebook" target="_blank" aria-label="Visítanos en Facebook">
+            <img src="img/redes-sociales/facebook.png" alt="Visítanos en Facebook">
+        </a>
+        <a href="https://www.instagram.com/" class="btn-instagram" target="_blank" aria-label="Visítanos en Instagram">
+            <img src="img/redes-sociales/instagram.png" alt="Visítanos en Instagram">
+        </a>
+        <p>© 2026 Industrias y Distribuciones L&T.</p>
+        <p><a href="#privacidad" class="politica-link">Política de Privacidad</a></p>
+    </footer>
+    <!-- Botón flotante de WhatsApp -->
+    <!-- (Leído en internet que debe de ir al final de la página por cuestión de estilo de HTML)-->
+    <a href="https://wa.me/34612345678?text=Hola,%20me%20gustaría%20pedir%20información%20acerca%20de" class="btn-whatsapp" target="_blank" aria-label="Contactar por WhatsApp">
+        <img src="img/redes-sociales/whatsapp.png" alt="WhatsApp de la empresa">
+    </a>
+    <!--Esto no se si va aquí-->
+    <!--banner de cookies para cuando la implemente en Netlify o github pages-->
+    <div id="cookie-banner">
+        Esta web utiliza cookies para mejorar la experiencia del usuario.
+        <button onclick="document.getElementById('cookie-banner').style.display='none'">Aceptar</button>
+    </div>
+    <!--Politica privacidad-->
+    <section id="privacidad">
+        <h4>Política de Privacidad</h4>
+        <p> En Industrias y Distribuciones L&T nos comprometemos a proteger la información personal de nuestros usuarios. 
+        Los datos que nos proporcione a través del formulario de contacto serán utilizados únicamente para responder a sus consultas y no serán compartidos con terceros. 
+        Puede solicitar la eliminación de sus datos en cualquier momento enviando un correo a info@miempresa.com. 
+        Al utilizar este sitio web, acepta nuestra política de privacidad.
+        </p>
+    </section>
+    <!--Conexion con JS-->
+    <script src="script.js"></script>
+</body>
+</html>
