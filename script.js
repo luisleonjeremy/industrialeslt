@@ -82,5 +82,5 @@ function enviarFormulario() {
     // Si todo está correcto -> envío del mensaje a través de WhatsApp
     const texto = `Hola, soy ${nombre.value}. Mi correo es ${email.value}. Escribo acerca de ${motivo.value}. ${mensaje.value}`;
 
-    window.open("https://wa.me/34612345678?text=" + encodeURIComponent(texto), "_blank");
+    window.open("https://wa.me/34639128494?text=" + encodeURIComponent(texto), "_blank");
 }

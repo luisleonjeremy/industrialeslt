@@ -9,7 +9,7 @@
 /* Estilos generales del cuerpo del documento */
 body {
     font-family: Arial, sans-serif;
-    background-color: #eeeeeeee;
+    background-color: #e6e6e6;
     color: #333;
     line-height: 1.6;
 }
@@ -454,7 +454,7 @@ footer img:hover {
     .btn-whatsapp {
         position: fixed;
         bottom: 20px;
-        right: 15px;
+        right: 10px;
         z-index: 9999;
     }
 }
