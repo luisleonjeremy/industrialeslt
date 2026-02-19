@@ -1,15 +1,19 @@
+<!--
+    Jeremy Manuel Luis León
+    1 DAW - Lenguaje de Marcas - CIFP César Manrique
+-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!--Codificacion de caracteres-->
+    <!--Codificación de caracteres-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Palabras clave-->
     <!--En desuso pero imprescindibles ya que el nombre de la empresa no es del todo claro para el usuario final-->
     <meta name="keywords" content="industrias, acero inoxidable, industriales, lyt, lit, ele y te, l&t, elite, isleñas, islenas, distribuciones, industrial, waterjet, cutting, corte por agua">
-    <!--Titulo de la pagina-->
+    <!--Título de la página-->
     <title>L&T - Distribuciones Isleñas</title>
-    <!--Conexion con CSS-->
+    <!--Conexión con CSS-->
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
@@ -31,13 +35,11 @@
     </header>
     <!--Despliegue de secciones-->
     <!--Seccion "quienes somos"-->
-    <!-- Aqui deberia de poner a que nos dedicamos, ultimos trabajos y algunas imagenes-->
     <section id="quienes-somos">
         <h2>¿Quiénes somos?</h2>
         <div class="quienes-grid">
             <!--parrafo-->
             <p>Empresa de cerrajería metálica especializada en el mecanizado y transformación del metal, con una amplia trayectoria en el corte por agua de metales, soldadura en acero inoxidable y trabajos de corte y pliegue de alta precisión durante más de 10 años de servicios. Se desarrollan también proyectos de fabricación de mobiliario industrial y alimenticio, ofreciendo soluciones personalizadas, resistentes y adaptadas a las necesidades de cada cliente.</p>
-
             <div class="ubicacion">
                 <h4>¿Dónde nos encontramos?</h4>
                 <p class="direccion"> Pol. Industrial La Campana, C/ Thomas Alba Edison, nº 6 Trasera, Nave 4, 38109 El Rosario, Santa Cruz de Tenerife </p>
@@ -45,7 +47,7 @@
                 </a>
             </div>
         </div>
-        <!--imagenes de ultimos trabajos-->
+        <!--Imágenes de últimos trabajos-->
         <h4>Últimos trabajos</h4>
         <div class="ultimos-trabajos">
             <!--Waterjet-->
@@ -70,7 +72,7 @@
             </figure>
         </div>
     </section>
-    <!--Seccion "galeria de imagenes"-->
+    <!--Sección "galería de imágenes"-->
     <section id="instalaciones">
         <h2>Nuestras instalaciones</h2>
         <div class="carousel">
@@ -91,8 +93,7 @@
         </div>
     </section>
 
-    <!--Seccion "formulario de contacto"-->
-    <!--Me gustaria con js integrar el contactanos con enviar un whatsapp al numero de la empresa-->
+    <!--Sección "formulario de contacto"-->
     <section id="contactanos">
         <h2>Contacta con nosotros</h2>
         <!--Formulario-->
@@ -103,7 +104,7 @@
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
                 <span class="error">Campo obligatorio</span>
             </p>
-            <!--Correo electronico-->
+            <!--Correo electrónico-->
             <p>
                 <label for="email">Correo electrónico:</label><br>
                 <input type="email" id="email" name="email" placeholder="usuario@ejemplo.com" required>
@@ -124,13 +125,13 @@
                 <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escriba su mensaje" required></textarea>
                 <span class="error">Campo obligatorio</span>
             </p>
-            <!--Boton de envio de mensaje (mediante whatsapp)-->
+            <!--Botón de envio de mensaje (mediante WhatsApp)-->
             <p>
                 <button type="button"onclick="enviarFormulario()">Enviar</button>
             </p>
         </form>
     </section>
-    <!--Pie de pagina-->
+    <!--Pie de página-->
     <footer>
         <a href="https://www.facebook.com/" class="btn-facebook" target="_blank" aria-label="Visítanos en Facebook">
             <img src="img/redes-sociales/facebook.png" alt="Visítanos en Facebook">
@@ -142,17 +143,15 @@
         <p><a href="#privacidad" class="politica-link">Política de Privacidad</a></p>
     </footer>
     <!-- Botón flotante de WhatsApp -->
-    <!-- (Leído en internet que debe de ir al final de la página por cuestión de estilo de HTML)-->
     <a href="https://wa.me/34639128494?text=Hola,%20me%20gustaría%20pedir%20información%20acerca%20de" class="btn-whatsapp" target="_blank" aria-label="Contactar por WhatsApp">
         <img src="img/redes-sociales/whatsapp.png" alt="WhatsApp de la empresa">
     </a>
-    <!--Esto no se si va aquí-->
-    <!--banner de cookies para cuando la implemente en Netlify o github pages-->
+    <!--Banner de cookies -->
     <div id="cookie-banner">
         Esta web utiliza cookies para mejorar la experiencia del usuario.
         <button onclick="document.getElementById('cookie-banner').style.display='none'">Aceptar</button>
     </div>
-    <!--Politica privacidad-->
+    <!--Política privacidad-->
     <section id="privacidad">
         <h4>Política de Privacidad</h4>
         <p> En Industrias y Distribuciones L&T nos comprometemos a proteger la información personal de nuestros usuarios. 
@@ -161,7 +160,7 @@
         Al utilizar este sitio web, acepta nuestra política de privacidad.
         </p>
     </section>
-    <!--Conexion con JS-->
+    <!--Conexión con JS-->
     <script src="script.js"></script>
 </body>
 </html>

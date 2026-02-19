@@ -1,10 +1,14 @@
 // script.js
+    //Jeremy Manuel Luis León
+    //1 DAW - Lenguaje de Marcas - CIFP César Manrique
+
 // Función para el menú hamburguesa en dispositivos móviles
 // Menú hamburguesa
 const menuToggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".nav");
 menuToggle.addEventListener("click", () => { nav.classList.toggle("activo"); });
 
+// Función de carousel de imágenes en la sección de instalaciones
 /* Carrusel de imágenes de la sección de instalaciones:
     - Se mueve automáticamente cada 5 segundos.
     - Al llegar al final, vuelve al inicio.
@@ -14,7 +18,6 @@ const track = document.querySelector('.carousel-track');
 const items = Array.from(track.children);
 let index = 0;
 let direccion = 1; // 1 = hacia adelante, -1 = hacia atrás
-
 function moverCarrusel() {
     const ancho = items[0].getBoundingClientRect().width;
     // Cambiar dirección al llegar al final o al inicio
@@ -25,7 +28,6 @@ function moverCarrusel() {
     // Aplicar transformación
     track.style.transform = `translateX(-${index * ancho}px)`;
 }
-
 // Iniciar carrusel
 // Si la página se abre en modo web, será automático el desplazamiento, si abre en modo dispositivo, se moverá de forma manual
 let intervalo;
@@ -33,19 +35,16 @@ function iniciarCarrusel() {
     if (window.innerWidth >= 1024)
         intervalo = setInterval(moverCarrusel, 5000);
 }
-
 // Detener Carrusel para pausar el movimiento del contenedor
 function detenerCarrusel() {
     clearInterval(intervalo);
 }
-
 // Iniciar el carrusel y reiniciar en caso de que cambie la configuración de la pantalla
 iniciarCarrusel();
 window.addEventListener("resize", () => {
     detenerCarrusel();
     iniciarCarrusel();
 })
-
 // Pausa al pasar el ratón por la imagen
 track.addEventListener('mouseenter', () => clearInterval(intervalo));
 track.addEventListener('mouseleave', () => intervalo = setInterval(moverCarrusel, 5000));
@@ -81,6 +80,5 @@ function enviarFormulario() {
     if (!valido) return;
     // Si todo está correcto -> envío del mensaje a través de WhatsApp
     const texto = `Hola, soy ${nombre.value}. Mi correo es ${email.value}. Escribo acerca de ${motivo.value}. ${mensaje.value}`;
-
     window.open("https://wa.me/34639128494?text=" + encodeURIComponent(texto), "_blank");
 }
